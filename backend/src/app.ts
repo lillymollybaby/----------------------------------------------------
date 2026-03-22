@@ -50,6 +50,16 @@ app.get('/api/health', (_req, res) => {
   res.json({ ok: true, ts: Date.now() })
 })
 
+app.get('/api/dbcheck', async (_req, res) => {
+  try {
+    const { prisma } = await import('./lib/prisma')
+    await prisma.$queryRaw`SELECT 1`
+    res.json({ db: 'ok' })
+  } catch (err: unknown) {
+    res.status(500).json({ db: 'error', msg: String(err) })
+  }
+})
+
 // Simple error handler
 app.use(
   (
