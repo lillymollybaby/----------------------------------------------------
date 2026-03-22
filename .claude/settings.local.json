@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install:*)",
+      "Bash(cmd /c \"rmdir /s /q node_modules\")",
+      "Bash(npx prisma:*)",
+      "Bash(node_modules/.bin/prisma generate:*)",
+      "Bash(cmd /c \"cd /d \"\"c:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\"\" && node_modules\\\\.bin\\\\prisma generate 2>&1\")",
+      "Bash(cmd /c \"cd /d \"\"c:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\"\" && node_modules\\\\.bin\\\\prisma generate\")",
+      "Bash(cmd /c \"dir \"\"c:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\\\\node_modules\\\\.bin\"\" | findstr prisma\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\\\\node_modules\\\\.bin'' | Where-Object {$_Name -like ''*prisma*''}\")",
+      "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa'' | Select-Object Name\")",
+      "Bash(powershell -Command \":*)"
+    ]
+  }
+}
