@@ -10,7 +10,9 @@
       "Bash(cmd /c \"dir \"\"c:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\\\\node_modules\\\\.bin\"\" | findstr prisma\")",
       "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa\\\\Прогрессивное веб-приложение для управления задачами\\\\backend\\\\node_modules\\\\.bin'' | Where-Object {$_Name -like ''*prisma*''}\")",
       "Bash(powershell -Command \"Get-ChildItem ''C:\\\\Users\\\\iamli\\\\Desktop\\\\codes\\\\pwa'' | Select-Object Name\")",
-      "Bash(powershell -Command \":*)"
+      "Bash(powershell -Command \":*)",
+      "Bash(curl -s https://231-five.vercel.app/api/health)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" https://123-eta-sand.vercel.app)"
     ]
   }
 }
