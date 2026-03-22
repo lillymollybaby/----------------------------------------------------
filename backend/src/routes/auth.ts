@@ -23,13 +23,13 @@ function generateTokens(userId: number) {
   const accessToken = jwt.sign(
     { userId },
     process.env.JWT_ACCESS_SECRET!,
-    { expiresIn: process.env.JWT_ACCESS_EXPIRES || '15m' }
+    { expiresIn: (process.env.JWT_ACCESS_EXPIRES || '15m') as any }
   )
 
   const refreshToken = jwt.sign(
     { userId },
     process.env.JWT_REFRESH_SECRET!,
-    { expiresIn: process.env.JWT_REFRESH_EXPIRES || '7d' }
+    { expiresIn: (process.env.JWT_REFRESH_EXPIRES || '7d') as any }
   )
 
   return { accessToken, refreshToken }
